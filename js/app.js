@@ -22,6 +22,11 @@ document.addEventListener('DOMContentLoaded', function() {
         alert('Разморозка подключения...');
     });
 
+    document.getElementById('pay-now').addEventListener('click', function() {
+        // AJAX-запрос для оплаты
+        alert('Оплата...');
+    });
+
     document.getElementById('contact-support').addEventListener('click', function() {
         // AJAX-запрос для связи с техподдержкой
         alert('Связь с техподдержкой...');
