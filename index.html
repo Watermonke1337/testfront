@@ -1,61 +1,73 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Teleos-1</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <img src="/source/teleos.png" alt="Логотип Teleos-1" class="logo">
-        <h1>Teleos-1</h1>
+      <img src="./source/teleos.png" alt="Логотип Teleos-1" class="logo" />
+      <h1>Teleos-1</h1>
     </header>
     <main>
-        <nav>
-            <button class="tablink" onclick="openTab(event, 'connection')">
-                <span class="material-symbols-outlined">settings_ethernet</span>
-                Управление подключением
-            </button>
-            <button class="tablink" onclick="openTab(event, 'payment')">
-                <span class="material-symbols-outlined">credit_card</span>
-                Оплата
-            </button>
-            <button class="tablink" onclick="openTab(event, 'support')">
-                <span class="material-symbols-outlined">support_agent</span>
-                Связь с поддержкой
-            </button>
-        </nav>
-        <section id="connection" class="tabcontent">
-            <h2>Ваш IP-адрес</h2>
-            <p id="current-ip">192.168.0.1</p>
-            <button id="change-ip">Изменить IP</button>
-            <h2>Информация о подключении</h2>
-            <p>Тариф: <span id="tariff">Базовый</span></p>
-            <button id="change-conditions">Изменить условия</button>
-            <h2>Заморозка подключения</h2>
-            <button id="freeze">Заморозить</button>
-            <button id="unfreeze">Разморозить</button>
-        </section>
-        <section id="payment" class="tabcontent">
-            <h2>Оплата</h2>
-            <p>Текущий баланс: <span id="balance">1000 руб.</span></p>
-            <button id="pay-now">Оплатить сейчас</button>
-        </section>
-        <section id="support" class="tabcontent">
-            <h2>Техподдержка</h2>
-            <p>Вы можете связаться с нашей техподдержкой, используя один из следующих способов:</p>
-            <ul>
-                <li>Телефон: 8-800-123-45-67</li>
-                <li>Email: support@teleos1.com</li>
-                <li>Чат в Telegram: <a href="https://t.me/teleos1_support">t.me/teleos1_support</a></li>
-            </ul>
-            <button id="contact-support">Связаться с техподдержкой</button>
-        </section>
+      <nav>
+        <button class="tablink" onclick="openTab(event, 'connection')">
+          <span class="material-symbols-outlined">settings_ethernet</span>
+          Управление подключением
+        </button>
+        <button class="tablink" onclick="openTab(event, 'payment')">
+          <span class="material-symbols-outlined">credit_card</span>
+          Оплата
+        </button>
+        <button class="tablink" onclick="openTab(event, 'support')">
+          <span class="material-symbols-outlined">support_agent</span>
+          Связь с поддержкой
+        </button>
+      </nav>
+      <section id="connection" class="tabcontent">
+        <h2>Ваш IP-адрес</h2>
+        <p id="current-ip">192.168.0.1</p>
+        <button id="change-ip">Изменить IP</button>
+        <h2>Информация о подключении</h2>
+        <p>Тариф: <span id="tariff">Базовый</span></p>
+        <button id="change-conditions">Изменить условия</button>
+        <h2>Заморозка подключения</h2>
+        <button id="freeze">Заморозить</button>
+        <button id="unfreeze">Разморозить</button>
+      </section>
+      <section id="payment" class="tabcontent">
+        <h2>Оплата</h2>
+        <p>Текущий баланс: <span id="balance">1000 руб.</span></p>
+        <button id="pay-now">Оплатить сейчас</button>
+      </section>
+      <section id="support" class="tabcontent">
+        <h2>Техподдержка</h2>
+        <p>
+          Вы можете связаться с нашей техподдержкой, используя один из следующих
+          способов:
+        </p>
+        <ul>
+          <li>Телефон: 8-800-123-45-67</li>
+          <li>Email: support@teleos1.com</li>
+          <li>
+            Чат в Telegram:
+            <a href="https://t.me/teleos1_support">t.me/teleos1_support</a>
+          </li>
+        </ul>
+        <button id="contact-support">Связаться с техподдержкой</button>
+      </section>
     </main>
     <script src="js/app.js"></script>
-</body>
+  </body>
 </html>
