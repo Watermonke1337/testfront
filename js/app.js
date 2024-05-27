@@ -2,37 +2,21 @@ document.addEventListener('DOMContentLoaded', function() {
     const tg = window.Telegram.WebApp;
     tg.expand();
 
-    document.getElementById('change-ip').addEventListener('click', function() {
-        // AJAX-запрос для изменения IP-адреса
-        alert('Изменение IP-адреса...');
+    const buttons = [
+        { id: 'change-ip', message: 'Изменение IP-адреса...' },
+        { id: 'change-conditions', message: 'Изменение условий подключения...' },
+        { id: 'freeze', message: 'Заморозка подключения...' },
+        { id: 'unfreeze', message: 'Разморозка подключения...' },
+        { id: 'pay-now', message: 'Оплата...' },
+        { id: 'contact-support', message: 'Связь с техподдержкой...' },
+    ];
+
+    buttons.forEach(btn => {
+        document.getElementById(btn.id).addEventListener('click', function() {
+            alert(btn.message);
+        });
     });
 
-    document.getElementById('change-conditions').addEventListener('click', function() {
-        // AJAX-запрос для изменения условий подключения
-        alert('Изменение условий подключения...');
-    });
-
-    document.getElementById('freeze').addEventListener('click', function() {
-        // AJAX-запрос для заморозки подключения
-        alert('Заморозка подключения...');
-    });
-
-    document.getElementById('unfreeze').addEventListener('click', function() {
-        // AJAX-запрос для разморозки подключения
-        alert('Разморозка подключения...');
-    });
-
-    document.getElementById('pay-now').addEventListener('click', function() {
-        // AJAX-запрос для оплаты
-        alert('Оплата...');
-    });
-
-    document.getElementById('contact-support').addEventListener('click', function() {
-        // AJAX-запрос для связи с техподдержкой
-        alert('Связь с техподдержкой...');
-    });
-
-    // Функция для открытия вкладок
     function openTab(evt, tabName) {
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
@@ -47,10 +31,8 @@ document.addEventListener('DOMContentLoaded', function() {
         evt.currentTarget.className += " active";
     }
 
-    // Открываем первую вкладку по умолчанию
     document.getElementsByClassName("tablink")[0].click();
 
-    // Добавляем обработчики событий для вкладок
     const tablinks = document.getElementsByClassName('tablink');
     for (let i = 0; i < tablinks.length; i++) {
         tablinks[i].addEventListener('click', function(event) {
