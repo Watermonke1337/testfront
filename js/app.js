@@ -49,4 +49,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Открываем первую вкладку по умолчанию
     document.getElementsByClassName("tablink")[0].click();
+    
+    // Добавляем обработчики событий для вкладок
+    const tablinks = document.getElementsByClassName('tablink');
+    for (let i = 0; i < tablinks.length; i++) {
+        tablinks[i].addEventListener('click', function(event) {
+            openTab(event, tablinks[i].getAttribute('onclick').split("'")[1]);
+        });
+    }
 });
