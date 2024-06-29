@@ -2,17 +2,68 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #121212; /* Dark blue */
 }
 
-#user-info-window, #payment-window, #info-window {
-    width: 300px;
-    height: 200px;
-    border: 1px solid #ccc;
+header {
+    background-color: #121212; /* Dark blue */
+    padding: 20px;
+    text-align: center;
+}
+
+.header-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.card {
+    background-color: #212121; /* Darker blue */
     border-radius: 10px;
     padding: 20px;
-    display: none;
+    margin: 10px;
 }
 
-#user-info-window.show, #payment-window.show, #info-window.show {
-    display: block;
+.card-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
+
+.card-description {
+    font-size: 14px;
+    color: lightblue;
+}
+
+.card-icon {
+    margin-top: 10px;
+}
+
+.card-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+footer {
+    background-color: #121212; /* Dark blue */
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 14px;
+    color: lightblue;
 }
