@@ -1,92 +1,19 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Teleos-1</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;600;700&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
-    />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Web App</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  </head>
-  <body>
-    <header class="header">
-      <img
-        src="./source/logo.png"
-        alt="Логотип Teleos-1"
-        class="header__logo"
-      />
-      <h1 class="header__title">Teleos-1</h1>
-    </header>
-    <main class="main">
-      <nav class="nav">
-        <button class="nav__tablink" data-tab="connection">
-          <span class="material-symbols-outlined">settings_ethernet</span>
-          Управление подключением
-        </button>
-        <button class="nav__tablink" data-tab="payment">
-          <span class="material-symbols-outlined">credit_card</span>
-          Оплата
-        </button>
-        <button class="nav__tablink" data-tab="support">
-          <span class="material-symbols-outlined">support_agent</span>
-          Связь с поддержкой
-        </button>
-      </nav>
-
-      <section id="connection" class="tabcontent">
-        <h2 class="tabcontent__title">Ваш IP-адрес</h2>
-        <p id="current-ip" class="tabcontent__text">192.168.0.1</p>
-        <button id="change-ip" class="tabcontent__button">Изменить IP</button>
-        <h2 class="tabcontent__title">Информация о подключении</h2>
-        <p class="tabcontent__text">Тариф: <span id="tariff">Базовый</span></p>
-        <button id="change-conditions" class="tabcontent__button">
-          Изменить условия
-        </button>
-        <h2 class="tabcontent__title">Заморозка подключения</h2>
-        <button id="freeze" class="tabcontent__button">Заморозить</button>
-        <button id="unfreeze" class="tabcontent__button">Разморозить</button>
-      </section>
-      <section id="payment" class="tabcontent">
-        <h2 class="tabcontent__title">Оплата</h2>
-        <p class="tabcontent__text">
-          Текущий баланс: <span id="balance">1000 руб.</span>
-        </p>
-        <button id="pay-now" class="tabcontent__button">Оплатить сейчас</button>
-      </section>
-      <section id="support" class="tabcontent">
-        <h2 class="tabcontent__title">Техподдержка</h2>
-        <p class="tabcontent__text">
-          Вы можете связаться с нашей техподдержкой, используя один из следующих
-          способов:
-        </p>
-        <ul class="tabcontent__list">
-          <li class="tabcontent__list-item">Телефон: 8-800-123-45-67</li>
-          <li class="tabcontent__list-item">Email: support@teleos1.com</li>
-          <li class="tabcontent__list-item">
-            Чат в Telegram:
-            <a href="https://t.me/teleos1_support" class="tabcontent__link"
-              >t.me/teleos1_support</a
-            >
-          </li>
-        </ul>
-        <button id="contact-support" class="tabcontent__button">
-          Связаться с техподдержкой
-        </button>
-      </section>
-    </main>
-    <script src="js/script.js"></script>
-  </body>
+</head>
+<body>
+    <h1>Добро пожаловать в Telegram Web App</h1>
+    <p>Пример текста</p>
+    <button onclick="sendMessage()">Кнопк</button>
+    <script>
+        function sendMessage() {
+            Telegram.WebApp.sendData("Web App!");
+        }
+    </script>
+</body>
 </html>
