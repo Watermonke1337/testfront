@@ -1,100 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Telegram Mini App</title>
-    <link rel="stylesheet" href="css\styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
     <!-- Header -->
     <header>
-        <div class="header-title">TON</div>
+      <h1 class="header-title">TON</h1>
     </header>
 
-    <!-- Main Content -->
-    <main>
-        <div class="card-grid">
-            <!-- Card 1 -->
-            <div class="card">
-                <div class="card-title">104,715</div>
-                <div class="card-description">World-record TPS</div>
-                <div class="card-icon">
-                    <img src="speedometer-icon.png" alt="Speedometer Icon">
-                </div>
-            </div>
 
-            <!-- Card 2 -->
-            <div class="card">
-                <div class="card-title">2.2M</div>
-                <div class="card-description">New Wallets</div>
-                <div class="card-icon">
-                    <img src="wallet-icon.png" alt="Wallet Icon">
-                </div>
-            </div>
 
-            <!-- Card 3 -->
-            <div class="card">
-                <div class="card-title">150+</div>
-                <div class="card-description">Active Projects</div>
-                <div class="card-icon">
-                    <img src="project-icon.png" alt="Project Icon">
-                </div>
-            </div>
 
-            <!-- Card 4 -->
-            <div class="card">
-                <div class="card-title">12.5K</div>
-                <div class="card-description">Number of developers in TON Dev Communities</div>
-                <div class="card-icon">
-                    <img src="dev-icon.png" alt="Dev Icon">
-                </div>
-            </div>
+<div class="cards">
+    <div class="card">
+        <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+            {
+            "symbols": [
+              [
+                "CRYPTO:TONUSD|1D"
+              ]
+            ],
+            "chartOnly": false,
+            "width": "500",
+            "height": "400",
+            "locale": "en",
+            "colorTheme": "dark",
+            "autosize": false,
+            "showVolume": false,
+            "showMA": false,
+            "hideDateRanges": false,
+            "hideMarketStatus": true,
+            "hideSymbolLogo": false,
+            "scalePosition": "right",
+            "scaleMode": "Normal",
+            "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+            "fontSize": "10",
+            "noTimeScale": false,
+            "valuesTracking": "1",
+            "changeMode": "price-and-percent",
+            "chartType": "area",
+            "maLineColor": "#2962FF",
+            "maLineWidth": 1,
+            "maLength": 9,
+            "lineWidth": 2,
+            "lineType": 0,
+            "dateRanges": [
+              "1d|1",
+              "1m|30",
+              "3m|60",
+              "12m|1D",
+              "60m|1W",
+              "all|1M"
+            ],
+            "upColor": "#22ab94",
+            "downColor": "#f7525f"
+          }
+            </script>
+          </div>
+    </div>
+    
+    
+         
+    
+    
+    <div class="card">
+        <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+            {
+            "symbols": [
+              [
+                "FX:EURUSD|1D"
+              ],
+              [
+                "NASDAQ:NVDA|1D"
+              ],
+              [
+                "NASDAQ:TSLA|1D"
+              ]
+            ],
+            "chartOnly": false,
+            "width": "500",
+            "height": "400",
+            "locale": "en",
+            "colorTheme": "dark",
+            "autosize": false,
+            "showVolume": false,
+            "showMA": false,
+            "hideDateRanges": false,
+            "hideMarketStatus": true,
+            "hideSymbolLogo": false,
+            "scalePosition": "right",
+            "scaleMode": "Normal",
+            "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+            "fontSize": "10",
+            "noTimeScale": false,
+            "valuesTracking": "1",
+            "changeMode": "price-and-percent",
+            "chartType": "area",
+            "maLineColor": "#2962FF",
+            "maLineWidth": 1,
+            "maLength": 9,
+            "lineWidth": 2,
+            "lineType": 0,
+            "dateRanges": [
+              "1d|1",
+              "1m|30",
+              "3m|60",
+              "12m|1D",
+              "60m|1W",
+              "all|1M"
+            ],
+            "upColor": "#22ab94",
+            "downColor": "#f7525f"
+          }
+            </script>
+          </div>
+    </div>
+    
+    
+    
+    
+    <div class="card">
+        <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+           
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+            {
+            "symbol": "NASDAQ:AAPL",
+            "width": "500",
+            "height": "400",
+            "locale": "en",
+            "dateRange": "12M",
+            "colorTheme": "dark",
+            "isTransparent": false,
+            "autosize": false,
+            "largeChartUrl": ""
+          }
+            </script>
+          </div>
+</div>
+</div>
+ 
 
-            <!-- Card 5 -->
-            <div class="card">
-                <div class="card-title">143M</div>
-                <div class="card-description">(+110% YoY)</div>
-                <div class="card-icon">
-                    <img src="chart-icon.png" alt="Chart Icon">
-                </div>
-            </div>
 
-            <!-- Card 6 -->
-            <div class="card">
-                <div class="card-title">2023 Transactions</div>
-                <div class="card-description">+</div>
-                <div class="card-icon">
-                    <img src="transaction-icon.png" alt="Transaction Icon">
-                </div>
-            </div>
 
-            <!-- Card 7 -->
-            <div class="card">
-                <div class="card-title">15.9M</div>
-                <div class="card-description">Daily TX Peak</div>
-                <div class="card-icon">
-                    <img src="peak-icon.png" alt="Peak Icon">
-                </div>
-            </div>
-
-            <!-- Card 8 -->
-            <div class="card">
-                <div class="card-title">617K</div>
-                <div class="card-description">Active Wallets</div>
-                <div class="card-icon">
-                    <img src="wallet-icon.png" alt="Wallet Icon">
-                </div>
-            </div>
-        </div>
     </main>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-text">THE OPEN NETWORK</div>
+      <div class="footer-text">THE OPEN NETWORK</div>
     </footer>
 
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
