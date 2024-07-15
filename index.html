@@ -4,162 +4,165 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Telegram Mini App</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
   </head>
+
   <body>
     <!-- Header -->
     <header>
-      <h1 class="header-title">TON</h1>
+      <h1 class="header-title">Charts</h1>
     </header>
 
-
-
-
-<div class="cards">
-    <div class="card">
-        <div class="tradingview-widget-container">
-            <div class="tradingview-widget-container__widget"></div>
-            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
-            {
-            "symbols": [
-              [
-                "CRYPTO:TONUSD|1D"
-              ]
-            ],
-            "chartOnly": false,
-            "width": "500",
-            "height": "400",
-            "locale": "en",
-            "colorTheme": "dark",
-            "autosize": false,
-            "showVolume": false,
-            "showMA": false,
-            "hideDateRanges": false,
-            "hideMarketStatus": true,
-            "hideSymbolLogo": false,
-            "scalePosition": "right",
-            "scaleMode": "Normal",
-            "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
-            "fontSize": "10",
-            "noTimeScale": false,
-            "valuesTracking": "1",
-            "changeMode": "price-and-percent",
-            "chartType": "area",
-            "maLineColor": "#2962FF",
-            "maLineWidth": 1,
-            "maLength": 9,
-            "lineWidth": 2,
-            "lineType": 0,
-            "dateRanges": [
-              "1d|1",
-              "1m|30",
-              "3m|60",
-              "12m|1D",
-              "60m|1W",
-              "all|1M"
-            ],
-            "upColor": "#22ab94",
-            "downColor": "#f7525f"
-          }
-            </script>
+    <main>
+      <div class="main__content">
+        <div class="charts">
+          <div class="charts__chart">
+            <div class="tradingview-widget-container">
+              <div class="tradingview-widget-container__widget"></div>
+              <script
+                type="text/javascript"
+                src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js"
+                async
+              >
+                  {
+                  "symbols": [
+                    [
+                      "CRYPTO:TONUSD|1D"
+                    ]
+                  ],
+                  "chartOnly": false,
+                  "width": "450",
+                  "height": "300",
+                  "locale": "en",
+                  "colorTheme": "dark",
+                  "autosize": false,
+                  "showVolume": false,
+                  "showMA": false,
+                  "hideDateRanges": false,
+                  "hideMarketStatus": true,
+                  "hideSymbolLogo": false,
+                  "scalePosition": "right",
+                  "scaleMode": "Normal",
+                  "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+                  "fontSize": "10",
+                  "noTimeScale": false,
+                  "valuesTracking": "1",
+                  "changeMode": "price-and-percent",
+                  "chartType": "area",
+                  "maLineColor": "#2962FF",
+                  "maLineWidth": 1,
+                  "maLength": 9,
+                  "lineWidth": 2,
+                  "lineType": 0,
+                  "dateRanges": [
+                    "1d|1",
+                    "1m|30",
+                    "3m|60",
+                    "12m|1D",
+                    "60m|1W",
+                    "all|1M"
+                  ],
+                  "upColor": "#22ab94",
+                  "downColor": "#f7525f"
+                }
+              </script>
+            </div>
           </div>
-    </div>
-    
-    
-         
-    
-    
-    <div class="card">
-        <div class="tradingview-widget-container">
-            <div class="tradingview-widget-container__widget"></div>
-            
-            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
-            {
-            "symbols": [
-              [
-                "FX:EURUSD|1D"
-              ],
-              [
-                "NASDAQ:NVDA|1D"
-              ],
-              [
-                "NASDAQ:TSLA|1D"
-              ]
-            ],
-            "chartOnly": false,
-            "width": "500",
-            "height": "400",
-            "locale": "en",
-            "colorTheme": "dark",
-            "autosize": false,
-            "showVolume": false,
-            "showMA": false,
-            "hideDateRanges": false,
-            "hideMarketStatus": true,
-            "hideSymbolLogo": false,
-            "scalePosition": "right",
-            "scaleMode": "Normal",
-            "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
-            "fontSize": "10",
-            "noTimeScale": false,
-            "valuesTracking": "1",
-            "changeMode": "price-and-percent",
-            "chartType": "area",
-            "maLineColor": "#2962FF",
-            "maLineWidth": 1,
-            "maLength": 9,
-            "lineWidth": 2,
-            "lineType": 0,
-            "dateRanges": [
-              "1d|1",
-              "1m|30",
-              "3m|60",
-              "12m|1D",
-              "60m|1W",
-              "all|1M"
-            ],
-            "upColor": "#22ab94",
-            "downColor": "#f7525f"
-          }
-            </script>
+
+          <div class="charts__chart">
+            <div class="tradingview-widget-container">
+              <div class="tradingview-widget-container__widget"></div>
+
+              <script
+                type="text/javascript"
+                src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js"
+                async
+              >
+                  {
+                  "symbols": [
+                    [
+                      "FX:EURUSD|1D"
+                    ],
+                    [
+                      "NASDAQ:NVDA|1D"
+                    ],
+                    [
+                      "NASDAQ:TSLA|1D"
+                    ]
+                  ],
+                  "chartOnly": false,
+                  "width": "450",
+                  "height": "300",
+                  "locale": "en",
+                  "colorTheme": "dark",
+                  "autosize": false,
+                  "showVolume": false,
+                  "showMA": false,
+                  "hideDateRanges": false,
+                  "hideMarketStatus": true,
+                  "hideSymbolLogo": false,
+                  "scalePosition": "right",
+                  "scaleMode": "Normal",
+                  "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+                  "fontSize": "10",
+                  "noTimeScale": false,
+                  "valuesTracking": "1",
+                  "changeMode": "price-and-percent",
+                  "chartType": "area",
+                  "maLineColor": "#2962FF",
+                  "maLineWidth": 1,
+                  "maLength": 9,
+                  "lineWidth": 2,
+                  "lineType": 0,
+                  "dateRanges": [
+                    "1d|1",
+                    "1m|30",
+                    "3m|60",
+                    "12m|1D",
+                    "60m|1W",
+                    "all|1M"
+                  ],
+                  "upColor": "#22ab94",
+                  "downColor": "#f7525f"
+                }
+              </script>
+            </div>
           </div>
-    </div>
-    
-    
-    
-    
-    <div class="card">
-        <div class="tradingview-widget-container">
-            <div class="tradingview-widget-container__widget"></div>
-           
-            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-            {
-            "symbol": "NASDAQ:AAPL",
-            "width": "500",
-            "height": "400",
-            "locale": "en",
-            "dateRange": "12M",
-            "colorTheme": "dark",
-            "isTransparent": false,
-            "autosize": false,
-            "largeChartUrl": ""
-          }
-            </script>
+
+          <div class="charts__chart">
+            <div class="tradingview-widget-container">
+              <div class="tradingview-widget-container__widget"></div>
+
+              <script
+                type="text/javascript"
+                src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js"
+                async
+              >
+                  {
+                  "symbol": "NASDAQ:AAPL",
+                  "width": "450",
+                  "height": "300",
+                  "locale": "en",
+                  "dateRange": "12M",
+                  "colorTheme": "dark",
+                  "isTransparent": false,
+                  "autosize": false,
+                  "largeChartUrl": ""
+                }
+              </script>
+            </div>
           </div>
-</div>
-</div>
- 
-
-
-
+        </div>
+      </div>
     </main>
-
     <!-- Footer -->
     <footer>
       <div class="footer-text">THE OPEN NETWORK</div>
     </footer>
 
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,49 +1,70 @@
+@font-face {
+  src: url(../fonts/Montserrat-Black.woff2);
+  src: url(../fonts/Montserrat-Bold.woff2);
+  src: url(../fonts/Montserrat-Regular.woff2);
+  src: url(../fonts/Montserrat-SemiBold.woff2);
+}
+
+:root {
+  --bg: #131722;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 0 auto;
-  padding: 0;
-  background-color: #121212; /* Dark blue */
+  max-width: 1140px;
+  font-family: Montserrat-Regular, sans-serif;
+  background-color: var(--bg);
 }
 
 header {
-  background-color: #121212; /* Dark blue */
-  padding: 20px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
 }
 
 .header-title {
+  width: 10em;
+  line-height: 2em;
   font-size: 24px;
+  text-transform: uppercase;
   font-weight: bold;
+  text-align: center;
   color: rgb(243, 243, 243);
+
+
+background: rgba(255, 255, 255, 0.05);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(17px);
+-webkit-backdrop-filter: blur(17px);
+border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 main {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
 }
 
-.cards {
- display: flex;
- flex-direction: column;
- justify-content: center;
-}
-.card {
-    margin: 0 auto;
-  margin-bottom: 30px;
- 
+.charts {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
+.charts__chart {
+  }
+
+
+.label-viu2QKQw {
+  display: none;
+}
 
 footer {
-    background-color: #121212; /* Dark blue */
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .footer-text {
-    font-size: 14px;
-    color: lightblue;
-  }
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 14px;
+  color: lightblue;
+}
